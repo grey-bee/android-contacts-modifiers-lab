@@ -1,11 +1,22 @@
 package ru.yandex.practicum.contacts.presentation.sort;
 
-// класс UiState должен иметь package-private доступ
-public class SortUiState {
+class SortUiState {
+    private boolean isApplyEnable = false;
+    private String newSelectedSortType = null;
 
-    // сделайте поля isApplyEnable и newSelectedSortType приватными
-    public boolean isApplyEnable = false;
-    public String newSelectedSortType = null;
+    public boolean getApplyEnable() {
+        return isApplyEnable;
+    }
 
-    // реализуйте get и set методы для обоих полей
+    public void setApplyEnable(boolean value) {
+        isApplyEnable = value;
+    }
+
+    public String getSelectedSortType() {
+        return newSelectedSortType;
+    }
+
+    public void setSelectedSortType(String value) {
+        newSelectedSortType = value;
+    }
 }
